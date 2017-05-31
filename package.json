@@ -1,0 +1,26 @@
+{
+  "name": "conf-landing",
+  "version": "1.0.0",
+  "description": "Landing for 1t.kz conference",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayessymkanov/1t-conference-landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayessymkanov/1t-conference-landing/issues"
+  },
+  "homepage": "https://github.com/ayessymkanov/1t-conference-landing#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
