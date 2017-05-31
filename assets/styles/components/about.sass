@@ -1,0 +1,52 @@
+.about
+    &.diagonal::after
+        background-color: #f4f4ff
+        transform: translate(-50%, -150%) rotate(-5deg)
+
+.topic
+    margin: 50px 0
+
+.topic__title
+    font-size: 1.5rem
+
+.topic__content
+    display: flex
+    align-items: center
+
+.topic__text
+    flex-basis: 100px
+    flex: 4
+    margin-right: 40px
+    padding: 20px
+    background: white
+    border: 1px solid #aaa
+    border-radius: 5px
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.2)
+
+.topic__subtitle
+    font-size: 1.1rem
+.topic__desc
+    margin-bottom: 20px
+    font-weight: 300
+
+.topic__meta
+    flex-basis: 100px
+    flex: 1
+
+.topic__meta__item
+    margin-bottom: 20px
+    & > span
+        display: block
+        &:first-child
+            font-size: 1.1rem
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                left: -10px
+                display: block
+                height: 1.5em
+                width: 5px
+                background-color: yellow
+        &:last-child
+            font-weight: 300
