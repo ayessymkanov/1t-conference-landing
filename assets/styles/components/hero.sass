@@ -1,0 +1,53 @@
+.hero
+    position: relative
+    height: 100vh
+    padding-top: 30px
+    color: white
+    background:
+        image: url(../assets/img/hero.png)
+        size: cover
+
+
+.title
+    font-size: 2.5rem
+    margin-top: 40px
+
+    & + p
+        margin-bottom: 100px
+        color: rgba(255,255,255,0.5)
+
+.additional-info
+    margin-top: 80px
+    color: rgba(255,255,255,0.5)
+
+.features-list
+    margin-top: 40px
+    list-style: none
+
+    & li
+        margin-bottom: 80px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: -20px
+            transform: translateY(-50%)
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            background-color: white
+
+        &:first-child
+            margin-left: 5px
+        &:nth-child(2)
+            margin-left: -15px
+        &:last-child
+            margin-left: -45px
+
+        & > span
+            display: block
+
+            &:last-child
+                color: rgba(255,255,255,0.5)
+                font-size: .95rem    

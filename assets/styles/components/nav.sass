@@ -1,0 +1,32 @@
+nav
+    display: flex
+    justify-content: space-between
+    font-family: 'Fira Sans', Arial, sans-serif
+    color: white
+
+.nav-section
+    display: flex
+    &:first-child
+        align-items: center
+    &:last-child
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+.logo
+    display: inline-block
+    width: 65px
+    height: 55px
+    margin-right: 20px
+    background:
+        image: url(../assets/img/logo.png)
+        size: cover
+
+    & + span
+        line-height: 1
+
+.phone
+    display: block
+    font-size: 1.2rem
+    & + a
+        color: rgba(255,255,255,0.5)
