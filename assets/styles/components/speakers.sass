@@ -1,0 +1,63 @@
+.speakers-container
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    padding: 50px 0
+    border: 1px solid #aaa
+    border-radius: 5px
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.2)
+    background-color: white
+
+.speaker
+    width: 30%
+    // margin: 50px
+    padding: 20px
+    // border: 1px solid black
+
+.speaker__thumb
+    position: relative
+    > img
+        width: 60%
+        display: block
+        margin: 0 auto
+        border: 3px solid #6761b0
+        border-radius: 50%
+
+.speaker__name
+    display: block
+    margin-top: 10px
+    font-weight: 700
+    text-transform: uppercase
+
+.speaker__desc
+    font-weight: 300
+
+.speaker__social-links
+    display: flex
+    justify-content: center
+
+.social-link
+    position: relative
+    display: inline-block
+    width: 40px
+    height: 40px
+    background-color: #6761b0
+    border: 2px solid white
+    border-radius: 50%
+    margin: 0 10px
+    & > img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    //
+    // &:nth-child(2)
+    //     bottom: 8%
+    //     left: 8%
+    // &:nth-child(3)
+    //     bottom: -8%
+    //     left: 50%
+    //     transform: translateX(-50%)
+    // &:last-child
+    //     bottom: 8%
+    //     right: 8%
