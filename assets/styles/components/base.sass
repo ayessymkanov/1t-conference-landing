@@ -19,12 +19,24 @@ body
 
 .section-title
     position: relative
-    margin-bottom: 40px
+    margin-bottom: 2.5rem
     text-transform: uppercase
     text-align: center
     font-weight: 400
     color: #343468
     font-size: 2rem
+
+    &--inline
+        margin-bottom: 1.5rem
+        & span
+            display: inline !important
+            &:first-child
+                font-weight: 400 !important
+            &:last-child
+                font-weight: 700
+        &::after
+            display: none
+
     & span
         display: block
         line-height: 1.25
@@ -44,7 +56,7 @@ body
 .diagonal
     position: relative
     z-index: 100
-    overflow-y: hidden
+    overflow: hidden
     &::after
         content: ''
         position: absolute
@@ -57,9 +69,26 @@ body
         background-color: #6761b0
 
 .button
-    padding: 10px 30px
+    padding: 5px 30px
     background-color: #ffde00
     border-radius: 20px
+    border: 1px solid transparent
     text-decoration: none
     color: #111
-    box-shadow: 0 0 10px 0 #ffde00
+    font-weight: 300
+    // box-shadow: 0 0 10px 0 #ffde00
+
+    & + &
+        margin-left: 1.5rem
+
+    &--tr
+        background-color: transparent
+        color: rgba(255,255,255,.5)
+        box-shadow: none
+    &--dark
+        background-color: #343468
+        color: white
+    &--white
+        background-color: white
+        border: 1px solid #343468
+        color: #343468

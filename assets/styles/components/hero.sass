@@ -17,12 +17,20 @@
         color: rgba(255,255,255,0.5)
 
 .additional-info
+    position: relative
     margin-top: 80px
     color: rgba(255,255,255,0.5)
+    font-weight: 300
+
+    &::before
+        content: url(../assets/img/quote.png)
+        position: absolute
+        left: -40px
 
 .features-list
     margin-top: 80px
     list-style: none
+    font-weight: 400
 
     & li
         margin-bottom: 80px
@@ -51,3 +59,14 @@
             &:last-child
                 color: rgba(255,255,255,0.5)
                 font-size: .95rem
+                font-weight: 300
+
+
+.button--tr span
+    position: relative
+    &::before
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: -25%
+        content: url(../assets/img/play.png)

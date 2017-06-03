@@ -1,0 +1,29 @@
+.present
+    &.diagonal::after
+        // height: 200px
+        background-color: #524d8e
+        transform: translate(-50%, -50%) rotate(-2deg)
+.present-content
+    display: flex
+    align-items: center
+    padding: 0 20px
+
+    & > img
+        width: 30%
+
+.present-info
+    & > h3
+        text-transform: uppercase
+        color: white
+        font-weight: 300
+        font-size: 2rem
+        margin-bottom: 10px
+
+        & > span
+            color: #ffde00
+
+    & input:not([type=submit])
+        background-color: white
+        padding: 5px 20px
+        border: 1px solid transparent
+        border-radius: 5px
