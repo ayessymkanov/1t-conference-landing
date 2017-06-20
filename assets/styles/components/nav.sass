@@ -1,8 +1,12 @@
+@import "./variables"
 nav
     display: flex
     justify-content: space-between
     font-family: 'Fira Sans', Arial, sans-serif
     color: white
+
+    @media(max-width: $viewport-s)
+        margin: 0 -10px
 
 .nav-section
     display: flex
@@ -15,9 +19,9 @@ nav
 
 .logo
     display: inline-block
-    width: 65px
-    height: 55px
-    margin-right: 20px
+    width: 3rem
+    height: 2.5rem
+    margin-right: .5rem
     background:
         image: url(../assets/img/logo.png)
         size: cover
@@ -30,3 +34,6 @@ nav
     font-size: 1.2rem
     & + a
         color: rgba(255,255,255,0.5)
+
+    @media(max-width: $viewport-m)
+        font-size: .9rem

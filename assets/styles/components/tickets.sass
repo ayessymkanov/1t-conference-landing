@@ -1,13 +1,23 @@
+@import "./variables"
+
 .tickets
     padding: 50px 0
     &.diagonal::after
         background-color: #f4f4ff
         transform: translate(-50%, -50%) rotate(-5deg)
+
+    @media(max-width: $viewport-s)
+        padding: 20px 0
+        
 .tickets-container
     display: flex
     justify-content: space-between
     align-items: center
     margin-top: 100px
+
+    @media(max-width: $viewport-s)
+        margin-top: 20px
+        flex-direction: column
 
 .ticket
     position: relative
@@ -16,6 +26,9 @@
     border: 1px solid #aaa
     box-shadow: 0 0 10px 0 rgba(0,0,0,.2)
     border-radius: 5px
+
+    @media(max-width: $viewport-s)
+        margin-bottom: 30px
 
     &--tall
         padding: 40px
@@ -52,10 +65,17 @@
     justify-content: center
     margin-top: 5rem
 
+    @media(max-width: $viewport-s)
+        text-align: center
+        margin-top: 2rem
+
     &__img
         width: 15%
         height: auto
         margin-right: 2rem
+
+        @media(max-width: $viewport-s)
+            display: none
 
     &__text
         width: 70%

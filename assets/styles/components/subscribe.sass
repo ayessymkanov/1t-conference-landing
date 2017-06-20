@@ -1,14 +1,24 @@
+@import "./variables"
+
 .subscribe-section
     background-color: #6761af
     padding: 20px 0
 .subscribe
     display: flex
+
+    @media(max-width: $viewport-s)
+        flex-direction: column
     &__text
         display: flex
         align-items: center
         flex: 5
         color: white
         line-height: 1.25
+
+        @media(max-width: $viewport-s)
+            margin-bottom: 1rem
+            justify-content: center
+
         & > img
             margin-right: 20px
     &__form
@@ -30,3 +40,6 @@
             border: 1px solid #aaa
             padding: 5px 10px
             letter-spacing: -0.025rem
+
+        & form
+            margin: 0 auto

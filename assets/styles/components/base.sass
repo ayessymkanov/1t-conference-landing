@@ -1,6 +1,13 @@
+@import "variables"
+
 body
     font: 16px/1.5 'Roboto Slab', Arial, sans-serif
     color: #343468
+
+    @media(max-width: $viewport-m)
+        font: 14px/1.5 'Roboto Slab', Arial, sans-serif
+    @media(max-width: $viewport-s)
+        font: 12px/1.5 'Roboto Slab', Arial, sans-serif
 
 .container
     position: relative
@@ -25,6 +32,9 @@ body
     font-weight: 400
     color: #343468
     font-size: 2rem
+
+    @media(max-width: $viewport-m)
+        font-size: 1.5rem
 
     &--inline
         margin-bottom: 1.5rem

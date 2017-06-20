@@ -12,8 +12,8 @@ $toast-col-groups: (2, 3, 4, 5, 6, 8, 12) !default;
 $toast-gutter-width: 20px !default;
 
 // Breakpoints
-$toast-breakpoint-medium: 700px !default;
-$toast-breakpoint-small: 480px !default;
+$toast-breakpoint-medium: 800px !default;
+$toast-breakpoint-small: 550px !default;
 
 // Pushes and pulls
 $toast-pushes: true !default;
@@ -181,6 +181,9 @@ $toast-pulls: true !default;
 
     &.#{$toast-grid-column-namespace}--m-3-of-4 {
       width: percentage(3/4);
+    }
+    &.#{$toast-grid-column-namespace}--m-4-of-4 {
+      width: percentage(4/4);
     }
   }
 

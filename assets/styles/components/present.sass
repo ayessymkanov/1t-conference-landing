@@ -1,8 +1,14 @@
+@import "./variables"
+
 .present
     &.diagonal::after
         // height: 200px
         background-color: #524d8e
         transform: translate(-50%, -50%) rotate(-2deg)
+
+    @media(max-width: $viewport-m)
+        display: none
+        
 .present-content
     display: flex
     align-items: center

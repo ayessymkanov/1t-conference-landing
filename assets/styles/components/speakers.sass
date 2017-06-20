@@ -1,3 +1,5 @@
+@import "./variables"
+
 .speakers-container
     display: flex
     justify-content: center
@@ -10,10 +12,12 @@
 
 .speaker
     width: 30%
-    // margin: 50px
     padding: 20px
-    // border: 1px solid black
 
+    @media(max-width: $viewport-m)
+        width: 50%
+    @media(max-width: $viewport-s)
+        width: 100%
 .speaker__thumb
     position: relative
     > img

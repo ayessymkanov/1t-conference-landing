@@ -9,7 +9,8 @@ gulp.task('styles', function() {
 	gulp.src('./assets/styles/styles.sass')
 		.pipe(sass())
 		.pipe(cleanCSS())
-		.pipe(gulp.dest('./assets/styles/dist'));
+		.pipe(gulp.dest('./assets/styles/dist'))
+		.pipe(gulp.dest('./dist'));
 });
 
 gulp.task('watch', function() {
